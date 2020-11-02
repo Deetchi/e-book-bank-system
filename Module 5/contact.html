@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+	   <h1 id="title" class="center-text mt-5" style="font-family: 'Abril Fatface', cursive;color:#262626;">Book Bank</h1>
+  </div>
+  <section>
+
+		<nav class="menu">
+			<button class="accordion">eBooks</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://books.google.com/');">Google Books</button>
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/Kindle-eBooks');">Kindle</button>
+			</div>
+			<button class="accordion">Purchase</button>
+	 		<div class="panel">
+				<button class="accordion-2" onclick="window.open('https://www.amazon.com/books-used-books-textbooks')">Amazon</button>
+				<button class="accordion-2" onclick="window.open('https://www.walmart.com/cp/books/3920')">Walmart</button>
+				<button class="accordion-2" onclick="window.open('https://www.abebooks.com/')">AbeBooks</button>
+			</div>
+			<button class="accordion-2" onclick="window.open('https://www.rejinpaul.com/2013/06/ece-eee-cse-it-mech-civil-bme-mba-mca-me-notes-anna-university.html')">AU Notes</button>
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.maxHeight) {
+			      panel.style.maxHeight = null;
+			    } else {
+			      panel.style.maxHeight = panel.scrollHeight + "px";
+			    }
+			  });
+			}
+			</script>
+		</nav>
+    <article>
+			<div style="text-align:center">
+				<h3 style='font-family: "Righteous", cursive;	'>Contact details </h3><br/>
+			</div>
+			<div style="text-align:left;margin-left:150px">
+				<h4 style='font-family: "Righteous", cursive;margin-bottom:15px	'>For any queries</h4>
+				<i class="fa fa-envelope fa-1x" aria-hidden="true" > - ebookbanksystem@gmail.com</i><br/><br/><br><br/><br/>
+				<h4 style='font-family: "Righteous", cursive;margin-bottom:15px	'>This is an Open-Source project</h4>
+				<i class="fa fa-github fa-1x" aria-hidden="true"> - <a href="https://github.com/PraveenM24/Book-Bank-Management-System" class="github">Book Bank Management System</a></i>
+			</div>
+
+
+    </article>
+    <div class="right">
+			<button class="logout" style="text-align: center; float:left;margin-left:70px;"><a href="../Module 3/dashboard1.html" style="text-decoration: none;color:#ffffff;font-weight:bolder;">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
+			<button class="logout" style="text-align: center; margin-left:15px; "><a href="logout.php" style="text-decoration: none;color:#ffffff;font-weight:bolder;">Logout</a></button>
+		</div>
+  </section>
+	<footer>
+	</footer>
+</body>
+</html>
